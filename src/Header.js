@@ -9,6 +9,7 @@ export default function Header({setFlashcards}) {
   const categoryEl = useRef()
   const ammountEl = useRef()
 
+  // Get all categories when starting the app
   useEffect(() => {
       axios.get('https://opentdb.com/api_category.php')
       .then(res => {
